@@ -10,8 +10,8 @@
 <div>
   <form method="POST" action="{{ route('login') }}">
     @csrf
-    <input type="text" name="email" placeholder="Email" /> <br>
-    <input type="text" name="password" placeholder="Password" /> <br>
+    <input type="text" name="email" placeholder="Email" value="{{ old('email') }}" /> <br>
+    <input type="password" name="password" placeholder="Password" value="{{ old('password') }}" /> <br>
     <button type="submit">Login</button>
     <a href="/register">Register</a>
 </form>

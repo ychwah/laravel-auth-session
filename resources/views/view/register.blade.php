@@ -6,14 +6,13 @@
   @endforeach
 </ul>
 @endif
-
 <div>
   <form method="POST" action="{{ route('register') }}">
     @csrf
-    <input type="name" name="name" placeholder="Name" />
-    <input type="text" name="email" placeholder="Email" /> <br>
-    <input type="text" name="password" placeholder="Password" /> <br>
-    <input type="text" name="vpassword" placeholder="Verify Password" /> <br>
+    <input type="name" name="name" placeholder="Name" value="{{ old('name') }}" /> <br />
+    <input type="text" name="email" placeholder="Email" value="{{ old('email') }}" /> <br>
+    <input type="password" name="password" placeholder="Password" value="{{ old('password') }}" /> <br>
+    <input type="password" name="vpassword" placeholder="Verify Password" value="{{ old('vpassword') }}" /> <br>
     <button type="submit">Register</button>
     <a href="/login">Login</a>
 </form>
