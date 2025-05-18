@@ -13,5 +13,6 @@
 <your-project-name>`
 2. Switch between fresh install laravel with `git checkout @feat/default` or
 with main (book adding feature) `git checkout main`
-3. Run `php artisan migrate:fresh`
-4. Run `php artisan serve`
+3. Install composer packages `composer install`
+4. Run `php artisan migrate:fresh`
+5. Run `php artisan serve`
